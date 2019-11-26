@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework-message-queue:etc/topology.xsd">
+    <exchange name="_exchange_" type="topic" connection="amqp">
+        <binding id="_consumer_" topic="_topic_" destinationType="queue" destination="_topic_"/>
+    </exchange>
+</config>
