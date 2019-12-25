@@ -1,17 +1,23 @@
 <?php
 
 namespace _vendor_\_module_\Model;
-class _model_ extends \Magento\Framework\Model\AbstractModel implements \Magento\Framework\DataObject\IdentityInterface
+
+use Magento\Framework\DataObject\IdentityInterface;
+use Magento\Framework\Model\AbstractModel;
+
+class _model_ extends AbstractModel implements IdentityInterface
 {
-    const CACHE_TAG = 'mageplaza_helloworld_post';
+    const CACHE_TAG = '_vendor___module___model_';
 
-    protected $_cacheTag = 'mageplaza_helloworld_post';
+    protected $_cacheTag = '_vendor___module___model_';
 
-    protected $_eventPrefix = 'mageplaza_helloworld_post';
+    protected $_eventPrefix = '_vendor___module___model_';
 
+
+    //No __construct
     protected function _construct()
     {
-        $this->_init('Mageplaza\HelloWorld\Model\ResourceModel\Post');
+        $this->_init('_vendor_\_module_\Model\ResourceModel\_model_');
     }
 
     public function getIdentities()
